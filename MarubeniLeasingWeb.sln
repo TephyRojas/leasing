@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarubeniLeasingWeb", "MarubeniLeasingWeb.csproj", "{06882C1B-A631-4963-9C3D-873088D0FDC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06882C1B-A631-4963-9C3D-873088D0FDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06882C1B-A631-4963-9C3D-873088D0FDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06882C1B-A631-4963-9C3D-873088D0FDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06882C1B-A631-4963-9C3D-873088D0FDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC3A5E0B-AB6A-45E5-A781-D0D13A2207E8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/marubeni-proyectos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MarubeniLeasingWeb.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

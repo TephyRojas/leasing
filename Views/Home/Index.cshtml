@@ -1,0 +1,266 @@
+﻿   <!-- Carousel -->
+<!-- contenedor carousel -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- indicadores bottom -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+    </div>
+    <!-- fin indicadores bottom -->
+    <!-- contendedor info -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="bd-placeholder-img" src="~/img/1-slide-marubeni-leasing.jpg" />
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Leasing Operativo</h1>
+                    <p>Es un servicio que en un pago mensual incluye documentación, permisos, seguros, vehículos de reemplazo y mantenciones...</p>
+                    <p><a class="btn btn-lg btn-primary" onclick="leasingOperativo();">Ver en detalle</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="bd-placeholder-img" src="~/img/3-slide-marubeni-leasing-operativo.jpg" />
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Leasing Financiero</h1>
+                    <p>Arriendo de flota de vehículos, maquinarias o equipos especiales por un plazo igual o superior a 12 meses...</p>
+                    <p><a class="btn btn-lg btn-primary" onclick="leasingFinanciero();">Ver en detalle</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="bd-placeholder-img" src="~/img/2-slide-marubeni-leasing.jpg" />
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Leaseback</h1>
+                    <p>Es un servicio que en un pago mensual incluye documentación, permisos, seguros, vehículos de reemplazo y mantenciones.</p>
+                    <p><a class="btn btn-lg btn-primary" onclick="leaseback();">Ver en detalle</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin contenedor info -->
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Fin contenedor carousel -->
+<!-- Fin Carousel -->
+<!-- formulario -->
+<div class="container">
+    <div class="content-form">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-2 col-xl-2">
+                <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                <input type="email" class="form-control" id="nombre" placeholder="Juan Pérez">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-2 col-xl-2">
+                <label for="exampleFormControlInput2" class="form-label">Teléfono</label>
+                <input type="tel" id="telefono" class="form-control" maxlength="9" name="telefono" placeholder="912345678">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-2 col-xl-2">
+                <label for="exampleFormControlInput3" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@example.com">
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-2 col-xl-2">
+                <label for="exampleFormControlInput4" class="form-label">Antigüedad Empresa</label>
+                <select class="form-select" id="servicio" aria-label="Default select example">
+                    <option selected>Selecciona Antigüedad</option>
+                    <option value="1">Menos de 1 año</option>
+                    <option value="2">Entre 1 y 2 años</option>
+                    <option value="3">Más de 2 años</option>
+                </select>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-2 col-xl-2">
+                <label for="exampleFormControlInput4" class="form-label">Servicio a cotizar</label>
+                <select class="form-select" id="servicio" aria-label="Default select example">
+                    <option selected>Selecciona servicio</option>
+                    <option value="1">Leasing Operativo</option>
+                    <option value="2">Leasing Financero</option>
+                    <option value="3">Leaseback</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-2 col-xl-2">
+                <button type="submit" class="btn btn-primary">Cotiza</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIN CARRUSEL -->
+<!-- Banner llamado -->
+<div class="banner">
+    <p class="llamado">Antes de contratar <strong>asesórate con Marubeni</strong> y nuestros servicios.<br><strong><a href="#">Contáctenos AQUÍ</a></strong></p>
+</div>
+<!-- Fin llamado -->
+<!-- Section servicios -->
+
+<section class="bg-1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 info-services bg-num-1">
+                <h3>Leasing Operativo</h3>
+                <div class="separador"></div>
+                <p>Arrendamiento de un vehículo donde se incluye en el pago  de la renta mensual.</p>
+                <a class="primary-action secundary-action" onclick="leasingOperativo()" role="button">Ver en detalle</a>
+            </div>
+            <div class="col-md-6 box-image img-01">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 box-image img-02">
+
+            </div>
+            <div class="col-md-6 info-services bg-num-2">
+                <h3>Leasing Financiero</h3>
+                <div class="separador"></div>
+                <p>Sistema de financiamiento que consiste en que Marubeni, por orden del cliente, compra y entrega en arriendo, con opción de compra, bienes de capital para que los utilice a un plazo que vand desde 1 año a 48 meses.</p>
+                <a class="primary-action secundary-action" onclick="leasingFinanciero()" role="button">Ver en detalle</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 info-services bg-num-3 text-dark">
+                <h3>Leaseback</h3>
+                <div class="separador"></div>
+                <p>Es una buena fuente de liquidez para las empresas. Es una operación de leasing a la inversa, es decir, es una operación donde el propietario de un bien le vende éste a Marubeni y en el mismo acto, suscribe un contrato de arrendamiento sobre el mismo bien.</p>
+                <a class="primary-action secundary-action" onclick="leaseback();" role="button">Ver en detalle</a>
+            </div>
+            <div class="col-md-6 box-image img-03">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- fin servicios -->
+
+<section class="empresa">
+    <div class="container">
+        <h2><span>Somos la mejor solución</span><br>para tu empresa</h2>
+        <div class="separador-2"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content-caption">
+                    <div class="content-icon">
+                        <img src="~/img/iconos/flotas-disponibles-icono.svg">
+                    </div>
+                    <h4>Flotas Disponibles</h4>
+                    <p>Contamos con productos flexibles y personalizados únicos en la industria.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="content-caption">
+                    <div class="content-icon"><img src="~/img/iconos/costos-conocidos-icono.svg"></div>
+                    <h4>Costos conocidos</h4>
+                    <p>Permite planificar el flujo de caja (tarifa mensual conocida), Elimina los costos imprevistos y ocultos derivados de tener flota propia.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="content-caption">
+                    <div class="content-icon"><img src="~/img/iconos/beneficios-icono.svg"></div>
+                    <h4>Beneficios</h4>
+                    <p>Es un arriendo con importantes beneficios tributarios.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="content-caption">
+                    <div class="content-icon"><img src="~/img/iconos/sin-inversion-flota-icono.svg"></div>
+                    <h4>Sin inversión de flotas</h4>
+                    <p>Libera recursos para la actividad principal de la empresa.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="content-caption">
+                    <div class="content-icon"><img src="~/img/iconos/control-icono.svg"></div>
+                    <h4>Control</h4>
+                    <p>Total control de la flota a través de un solo proveedor.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="content-caption">
+                    <div class="content-icon"><img src="~/img/iconos/continuidad-operacional-icono.svg"></div>
+                    <h4>Continuidad Operacional</h4>
+                    <p>Tenemos una red certificada de centros de atención.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner-2 highlights image-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Somos 100% Leasing</h3>
+                <div class="separador color-original"></div>
+                <p>Somos una empresa con más de 40 años de experiencia automotriz en Chile.</p>
+            </div>
+            <div class="col-md-8 p-0 image">
+                <img src="~/img/img-100-leasing-banner-2.jpg" class="fit-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="google-map">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-7 p-0">
+                <!-- google map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.7136284344415!2d-70.62202134324171!3d-33.48280580722847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfff9a1012d3%3A0x4c49f8b0f542aa45!2sVicu%C3%B1a%20Mackenna%203300%2C%20San%20Joaqu%C3%ADn%2C%20Macul%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1648532706961!5m2!1ses!2scl" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+            <div class="col-md-5 content-right">
+                <!-- datos -->
+                <div class="datos">
+                    <ul>
+                        <li>
+                            <h5>Casa Central</h5>
+                            <p>Avda. Vicuña Mackenna 3300, Macul, Santiago.</p>
+                        </li>
+                        <li>
+                            <h5>Fono</h5>
+                            <p><a href="tel:+56223500400">+56 2 2350 0400</a></p>
+                        </li>
+                        <li>
+                            <h5>Email</h5>
+                            <p>contacto@marubenileasing.cl</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/Scripts/page/Index.js"></script>
+<script>
+   
+</script>

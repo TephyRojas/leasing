@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+   @* <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />*@
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="~/Content/style.css">
+    <link rel="stylesheet" href="~/fonts/icomoon/style.css">
+
+    <title>Marubeni Leasing</title>
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body>
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <div class="top-bar d-none d-sm-block d-md-block">
+        <div class="container">
+            <div class="row datos-top">
+                <div class="col-md-12">
+                    <a href="#">Avda. Vicuña Mackenna N° 3300, Macul, Santiago.</a>
+                    <a href="mailto:contacto@marubenileasing.cl" class="">leasing@marubeni.cl</a>
+                    <a href="tel:+56223500400" class="">+56 2 2350 0400</a>
+
+                    <div class="float-right">
+                        <a href="https://www.facebook.com/marubeni.leasing/" target="_new" class=""><span class="mr-2  icon-facebook"></span> <span class="d-none d-md-inline-block"></span></a>
+                        <a href="https://www.instagram.com/marubenileasing/" target="_new" class=""><span class="mr-2  icon-instagram"></span> <span class="d-none d-md-inline-block"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-top d-none d-sm-block d-md-block">
+        <div class="container">
+            <div class="row border-bottom">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="https://marubeni.cl/" target="_new">Grupo Marubeni</a></li>
+                        <li><a href="https://www.marubeniusados.cl/" target="_new">Marubeni Auto</a></li>
+                        <li><a href="https://vendelobien.cl/home" target="_new">Vendelobien</a></li>
+                        <li><a href="https://www.marubenicredit.cl/" target="_new">Marubeni Credit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+            <div class="row align-items-center position-relative">
+                <div class="site-logo">
+                    <a href="index.html" class="text-black">
+                        <img src="~/img/Marubeni-leasing-logotipo.png" alt="Marubeni logotipo" />
+                    </a>
+                </div>
+
+                <div class="col-12">
+                    <nav class="site-navigation text-right ml-auto" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                            <li><a href="~/Home/Index" class="nav-link">Inicio</a></li>
+                            <li><a href="~/LeasingOperativo/index" class="nav-link">Leasing Operativo</a></li>
+                            <li><a href="~/LeasingFinanciero/index" class="nav-link">Leasing Financiero</a></li>
+                            <li><a href="~/Leaseback/index" class="nav-link">Leaseback</a></li>
+                            <li><a href="~/SeguroSiniestro/index" class="nav-link">Seguros Siniestros</a></li>
+                            <li><a href="~/Catalogo/index" class="nav-link">Catálogo</a></li>
+                            <li><a href="~/Cotizar/index" class="nav-link">Cotizar</a></li>
+                            <li><a href="~/Contacto/index" class="nav-link">Contacto</a></li>
+
+                            <li class="border-top dato-contacto-mobile d-block d-sm-block d-md-none"><span><a href="#">Avda. Vicuña Mackenna 3300, Macul, Santiago.</a></span></li>
+                            <li class="dato-contacto-mobile d-block d-sm-block d-md-none"><span><a href="mailto:contacto@marubenileasing.cl">contacto@marubenileasing.cl</a></span></li>
+                            <li class="dato-contacto-mobile d-block d-sm-block d-md-none"><span><a href="tel:+56223500400">+56 2 2350 0400</a></span></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="toggle-button d-inline-block d-lg-none">
+                    <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
+                        <span class="icon-menu h3"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 pl-3">
+                        <img style="width: 150px; margin-bottom:30px;" class="logo-footer" src="~/img/Marubeni-group-logotipo-footer.png">
+                    </div>
+
+                    <div class="col-md-3 pl-3">
+                        <h5>Navegación</h5>
+                        <ul class="navegacion">
+                            <li><a href="~/Home/Index"><span class="mr-2 icon-keyboard_arrow_right"></span> Inicio</a></li>
+                            <li><a href="~/LeasingOperativo/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Leasing Operativo</a></li>
+                            <li><a href="~/LeasingFinanciero/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Leasing Financiero</a></li>
+                            <li><a href="~/Leaseback/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Leaseback</a></li>
+                            <li><a href="~/SeguroSiniestro/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Seguros Siniestros</a></li>
+                            <li><a href="~/Catalogo/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Catálogo</a></li>
+                            <li><a href="~/Cotizar/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Cotizar</a></li>
+                            <li><a href="~/Contacto/index"><span class="mr-2 icon-keyboard_arrow_right"></span> Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 pl-3">
+                        <h5>Casa Central </h5>
+                        <ul class="locations pb-4 border-bottom">
+                            <li><span class="mr-2 icon-map-marker"></span> Avda. Vicuña Mackenna N° 3300, Macul, Santiago.</li>
+                            <li><a href="tel:+56223500400"><span class="mr-2 icon-perm_phone_msg"></span> +56 2 2350 0400</a></li>
+                            <li><a href="mailto:leasing@marubeni.cl"><span class="mr-2 icon-envelope"></span> leasing@marubeni.cl</a></li>
+                        </ul>
+
+                        <h5>Antofagasta</h5>
+                        <ul class="locations">
+                            <li><span class="mr-2 icon-map-marker"></span> Avenida Pedro Aguirre Cerda N° 7903, Antofagasta.</li>
+                            <li><a href="tel:+56223500451"><span class="mr-2 icon-perm_phone_msg"></span> +56 223 500 451</a></li>
+                            <li><a href="mailto:antofagasta@marubeni.cl"><span class="mr-2 icon-envelope"></span> antofagasta@marubeni.cl</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 pl-3">
+                        <ul class="redes-footer">
+                            <a href="https://www.facebook.com/marubeni.leasing/" target="_new">
+                            <li><span class="mr-2 icon-facebook"></span></li></a>
+                            <a href="https://www.instagram.com/marubenileasing/" target="_new">
+                            <li><span class="mr-2 icon-instagram"></span></li></a>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>&copy; Marubeni Leasing 2022. Todos los derechos reservados.</span>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        var BASE_PATH = '@Url.Content("~/")';
+    </script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.sticky.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>
